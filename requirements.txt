@@ -1,0 +1,2 @@
+dataisbeautiful-bot
+praw==6.5.1
