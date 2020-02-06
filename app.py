@@ -19,5 +19,4 @@ for submission in reddit.subreddit('dataisbeautiful').new(limit=100):
                 reddit.subreddit('dataisbeautiful').flair.set(submission.author.name, newflair, "ocmaker") # set new flair
             else: # user has never made an OC before
                 reddit.subreddit('dataisbeautiful').flair.set(submission.author.name, "OC: 1", "ocmaker") # set new flair
-            submission.author.message("r/DataIsBeautiful Submission OC Status Approved","Your post, [{0}]({1}), on r/DataIsBeautiful has been approved for OC status and your OC count has been increased to {2}.".format(submission.title,submission.permalink,oc_count),from_subreddit="dataisbeautiful")
             submission.save()
