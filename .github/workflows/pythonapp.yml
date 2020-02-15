@@ -1,8 +1,8 @@
-name: Run bot every 15 minutes
+name: Run bot every 30 minutes
 
 on:
   schedule:
-    - cron: '*/15 * * * *'
+    - cron: '*/30 * * * *'
 
 jobs:
   build:
