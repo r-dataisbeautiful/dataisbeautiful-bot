@@ -27,8 +27,7 @@ for submission in reddit.subreddit('dataisbeautiful').new(limit=100):
                         'Remember that all visualizations on r/DataIsBeautiful should be viewed with a healthy dose of skepticism. If you see a potential issue  or oversight in the visualization,' \
                         'please post a constructive comment below. Post approval does not signify this the visualization has been verified or its sources checked.\n\n[Join the Discord Community](https://discord.gg/NRnrWE7)\n\n' \
                         'Not satisfied with this visual? Think you can do better? [Remix this visual](https://www.reddit.com/r/dataisbeautiful/wiki/index#wiki_remixing) with the data in the in the author\'s citation.\n\n---' \
-                        '\n\n^^[I\'m&nbsp;open&nbsp;source](https://github.com/r-dataisbeautiful/dataisbeautiful-bot)&nbsp;|&nbsp;[How&nbsp;I&nbsp;work](https://www.reddit.com/r/dataisbeautiful/wiki/flair#wiki_oc_flair)'.format(
-                            submission.author.name, comment.permalink)
+                        '\n\n^^[I\'m&nbsp;open&nbsp;source](https://github.com/r-dataisbeautiful/dataisbeautiful-bot)&nbsp;|&nbsp;[How&nbsp;I&nbsp;work](https://www.reddit.com/r/dataisbeautiful/wiki/flair#wiki_oc_flair)'.format(submission.author.name, comment.permalink)
                 submission.reply(reply).mod.distinguish(sticky=True)
                 submission.save()
                 break
